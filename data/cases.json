@@ -1,0 +1,156 @@
+[
+  {
+    "id": "case-001",
+    "reference": "M&A-2026-001",
+    "subject": "Proposed acquisition of AMF by GF Singapore",
+    "status": "New",
+    "phase": "Intake",
+    "priority": "Medium",
+    "caseOrigin": "Form M1 pre-notification",
+    "owner": null,
+    "team": [],
+    "industry": "financial services",
+    "transactionType": "Acquisition of control",
+    "parties": {
+      "acquirer": "GF Singapore Holdings Pte. Ltd.",
+      "target": "AMF Capital Services Pte. Ltd."
+    },
+    "marketDefinition": {
+      "product": "merchant acquiring and payment facilitation services",
+      "geography": "Singapore"
+    },
+    "marketShare": {
+      "combined": 24,
+      "cr3": 68
+    },
+    "keyIssues": [
+      "customer switching",
+      "platform integrations",
+      "vertical links with payment gateways"
+    ],
+    "summary": "New intake case with no assigned team. Early facts suggest overlaps in merchant acquiring services and possible vertical links with payment gateway infrastructure.",
+    "commencementDate": "2026-05-18",
+    "dueDate": "2026-06-29",
+    "nextAction": "Validate completeness of Form M1 and third party contact list.",
+    "confidentiality": "High",
+    "workingOutcome": "Further information required before a Phase 1 view can be formed."
+  },
+  {
+    "id": "case-002",
+    "reference": "M&A-2025-014",
+    "subject": "Hino Motors and Mitsubishi Fuso Truck and Bus business integration",
+    "status": "Working",
+    "phase": "Phase 1",
+    "priority": "High",
+    "caseOrigin": "Formal notification",
+    "owner": "Priya Nair",
+    "team": [
+      "Priya Nair"
+    ],
+    "industry": "automotive",
+    "transactionType": "Joint venture and acquisition of control",
+    "parties": {
+      "acquirer": "Hino Motors, Ltd.",
+      "target": "Mitsubishi Fuso Truck and Bus Corporation"
+    },
+    "marketDefinition": {
+      "product": "commercial vehicles and related distribution services",
+      "geography": "Singapore"
+    },
+    "marketShare": {
+      "combined": 38,
+      "cr3": 74
+    },
+    "keyIssues": [
+      "fleet customer options",
+      "dealer network concentration",
+      "after-sales support"
+    ],
+    "summary": "Phase 1 assessment of overlaps in medium and heavy commercial vehicles, with focus on fleet procurement alternatives and after-sales network constraints.",
+    "commencementDate": "2026-04-27",
+    "dueDate": "2026-06-09",
+    "nextAction": "Complete fleet customer calls and review dealer concentration table.",
+    "confidentiality": "High",
+    "workingOutcome": "Possible Phase 2 unless customer evidence confirms sufficient alternatives."
+  },
+  {
+    "id": "case-003",
+    "reference": "M&A-2024-022",
+    "subject": "THL proposed acquisition of TalkMed",
+    "status": "Escalated",
+    "phase": "Phase 2",
+    "priority": "Critical",
+    "caseOrigin": "Formal notification",
+    "owner": "Alicia Tan",
+    "team": [
+      "Alicia Tan",
+      "Marcus Lim",
+      "Omar Rahman"
+    ],
+    "industry": "healthcare",
+    "transactionType": "Acquisition of shares",
+    "parties": {
+      "acquirer": "THL Healthcare Investments",
+      "target": "TalkMed Group Limited"
+    },
+    "marketDefinition": {
+      "product": "private oncology specialist services",
+      "geography": "Singapore"
+    },
+    "marketShare": {
+      "combined": 42,
+      "cr3": 78
+    },
+    "keyIssues": [
+      "specialist referral patterns",
+      "private hospital access",
+      "barriers to entry",
+      "countervailing buyer power"
+    ],
+    "summary": "Escalated healthcare merger with concentrated specialist services and evidence gaps on referral substitution.",
+    "commencementDate": "2026-02-05",
+    "dueDate": "2026-07-01",
+    "nextAction": "Prepare remedies options memo and targeted information request.",
+    "confidentiality": "High",
+    "workingOutcome": "Concerns remain; assess behavioural and structural remedy feasibility."
+  },
+  {
+    "id": "case-004",
+    "reference": "M&A-2012-007",
+    "subject": "Asia Pacific Breweries and Heineken control transaction",
+    "status": "Closed",
+    "phase": "Decision",
+    "priority": "Low",
+    "caseOrigin": "Formal notification",
+    "owner": "Marcus Lim",
+    "team": [
+      "Marcus Lim",
+      "Alicia Tan"
+    ],
+    "industry": "beverages",
+    "transactionType": "Acquisition of control",
+    "parties": {
+      "acquirer": "Heineken International B.V.",
+      "target": "Asia Pacific Breweries Limited"
+    },
+    "marketDefinition": {
+      "product": "beer and stout products supplied to on-trade and off-trade channels",
+      "geography": "Singapore"
+    },
+    "marketShare": {
+      "combined": 36,
+      "cr3": 71
+    },
+    "keyIssues": [
+      "brand portfolio strength",
+      "distribution arrangements",
+      "on-trade exclusivity"
+    ],
+    "summary": "Closed matter used as precedent for beverage market definition, distribution assessment, and brand portfolio evidence.",
+    "commencementDate": "2012-09-07",
+    "dueDate": "2012-10-19",
+    "nextAction": "No action. Available as precedent.",
+    "confidentiality": "Standard",
+    "workingOutcome": "Cleared based on available evidence and constraints."
+  }
+]

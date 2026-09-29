@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Salesforce AI Assistant</title>
+    <link rel="stylesheet" href="/styles.css">
+  </head>
+  <body>
+    <header class="utility-bar">
+      <button class="icon-button" aria-label="Open app launcher">::</button>
+      <div class="dev-pill">Developer Edition</div>
+      <div class="global-search">
+        <span aria-hidden="true">Search</span>
+        <input id="global-search" type="search" placeholder="Search cases, parties, markets">
+      </div>
+      <div class="toolbar">
+        <button class="icon-button" title="Favorites">*</button>
+        <button class="icon-button" title="Add">+</button>
+        <button class="icon-button" title="Help">?</button>
+        <button class="avatar" title="Current user">K</button>
+      </div>
+    </header>
+
+    <nav class="app-nav" aria-label="Primary">
+      <div class="cloud-mark" aria-hidden="true"></div>
+      <div class="brand">CAMP</div>
+      <a href="#" class="nav-link">Home</a>
+      <a href="#" class="nav-link">Accounts</a>
+      <a href="#" class="nav-link active">Cases</a>
+      <a href="#" class="nav-link">Dashboards</a>
+      <a href="#" class="nav-link">Reports</a>
+      <a href="#" class="nav-link">Claims of Privilege</a>
+      <a href="#" class="nav-link">Calendar</a>
+    </nav>
+
+    <main class="workspace">
+      <section class="record-summary" aria-label="Case summary">
+        <div>
+          <span class="field-label">Subject</span>
+          <strong id="summary-subject"></strong>
+        </div>
+        <div>
+          <span class="field-label">Status</span>
+          <strong id="summary-status"></strong>
+        </div>
+        <div>
+          <span class="field-label">Priority</span>
+          <strong id="summary-priority"></strong>
+        </div>
+        <div>
+          <span class="field-label">Case Origin</span>
+          <strong id="summary-origin"></strong>
+        </div>
+      </section>
+
+      <section class="path-row" aria-label="Progress path">
+        <div id="path-track" class="path-track"></div>
+        <button id="advance-status" class="primary-button">Mark Status as Complete</button>
+      </section>
+
+      <div class="content-grid">
+        <aside class="case-list-panel" aria-label="Cases">
+          <div class="panel-heading">
+            <h2>Cases</h2>
+            <span id="case-count"></span>
+          </div>
+          <div class="segmented" role="tablist" aria-label="Case filters">
+            <button class="segment active" data-filter="all">All</button>
+            <button class="segment" data-filter="New">New</button>
+            <button class="segment" data-filter="Working">Working</button>
+          </div>
+          <div id="case-list" class="case-list"></div>
+        </aside>
+
+        <section class="record-panel" aria-label="Case details">
+          <div class="tabs">
+            <button class="tab">Related</button>
+            <button class="tab active">Details</button>
+          </div>
+
+          <section class="section-band">
+            <button class="section-title" aria-expanded="true">Information</button>
+            <div class="field-grid">
+              <div class="field"><span>Case Reference</span><strong id="field-reference"></strong></div>
+              <div class="field"><span>Type</span><strong id="field-type"></strong></div>
+              <div class="field"><span>Case Owner</span><strong id="field-owner"></strong></div>
+              <div class="field"><span>Priority</span><strong id="field-priority"></strong></div>
+              <div class="field"><span>Status</span><strong id="field-status"></strong></div>
+              <div class="field"><span>Industry</span><strong id="field-industry"></strong></div>
+              <div class="field"><span>Commencement Date</span><strong id="field-start"></strong></div>
+              <div class="field"><span>Due Date</span><strong id="field-due"></strong></div>
+              <div class="field full"><span>Description</span><strong id="field-summary"></strong></div>
+            </div>
+          </section>
+
+          <section class="section-band">
+            <button class="section-title" aria-expanded="true">Merger</button>
+            <div class="merger-grid">
+              <div class="metric"><span>Combined Share</span><strong id="metric-share"></strong></div>
+              <div class="metric"><span>CR3</span><strong id="metric-cr3"></strong></div>
+              <div class="metric wide"><span>Relevant Product Market</span><strong id="market-product"></strong></div>
+              <div class="metric wide"><span>Relevant Geographic Market</span><strong id="market-geography"></strong></div>
+            </div>
+            <div id="issue-tags" class="tag-row"></div>
+          </section>
+
+          <section class="section-band">
+            <div class="panel-heading compact">
+              <h2>Team</h2>
+              <button id="recommend-team" class="secondary-button">Recommend Team</button>
+            </div>
+            <div id="team-strip" class="team-strip"></div>
+          </section>
+        </section>
+
+        <aside class="assistant-panel" aria-label="AI Assistant">
+          <div class="assistant-heading">
+            <span class="assistant-logo">AI</span>
+            <div>
+              <h2>AI Assistant</h2>
+              <p id="llm-status">Checking model connection...</p>
+            </div>
+          </div>
+          <div class="assistant-actions">
+            <button id="ask-team" class="secondary-button">Recommend assignees</button>
+            <button id="ask-policy" class="secondary-button">Policy summary</button>
+            <button id="generate-grounds" class="primary-button">Generate Grounds</button>
+          </div>
+          <div id="chat-log" class="chat-log" aria-live="polite"></div>
+          <form id="chat-form" class="chat-form">
+            <label for="chat-input">Type your message</label>
+            <div class="chat-input-row">
+              <textarea id="chat-input" rows="3" placeholder="Ask about this case, policies, team fit, or drafting..."></textarea>
+              <button class="send-button" type="submit">Send</button>
+            </div>
+          </form>
+        </aside>
+      </div>
+    </main>
+
+    <dialog id="decision-dialog" class="decision-dialog">
+      <form method="dialog" class="dialog-top">
+        <h2 id="decision-title">Grounds of Decision</h2>
+        <button class="icon-button" value="close" aria-label="Close">x</button>
+      </form>
+      <div id="decision-status" class="decision-status" hidden>
+        <span class="spinner" aria-hidden="true"></span>
+        <span id="decision-status-text">Preparing draft...</span>
+      </div>
+      <textarea id="decision-output" spellcheck="false"></textarea>
+      <div class="dialog-actions">
+        <button id="copy-decision" class="secondary-button">Copy Text</button>
+        <button id="download-decision" class="primary-button">Download Draft</button>
+      </div>
+    </dialog>
+
+    <script src="/app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,6 @@
+{
+  "apiKey": "sk-your-openai-api-key-here",
+  "model": "gpt-5.5",
+  "maxOutputTokens": 1200,
+  "groundsMaxOutputTokens": 4000
+}

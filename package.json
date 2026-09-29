@@ -1,0 +1,13 @@
+{
+  "name": "salesforce-ai-assistant",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Salesforce-style AI assistant prototype for Singapore merger and acquisition case handling.",
+  "scripts": {
+    "start": "node --use-system-ca server.js",
+    "dev": "node --use-system-ca server.js"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

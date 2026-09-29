@@ -1,0 +1,6 @@
+config/openai.config.json
+node_modules/
+logs/
+*.log
+deploy/
+salesforce-ai-assistant.zip

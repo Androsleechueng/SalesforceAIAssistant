@@ -1,0 +1,74 @@
+[
+  {
+    "id": "tm-001",
+    "name": "Alicia Tan",
+    "role": "Lead Case Officer",
+    "yearsExperience": 14,
+    "industries": ["healthcare", "pharmaceuticals", "professional services"],
+    "specialties": ["phase 2", "market definition", "remedies"],
+    "skills": ["interviews", "remedies", "confidentiality", "decision drafting"],
+    "clearance": "Restricted",
+    "previousMatters": ["THL / TalkMed", "Regional oncology services review"],
+    "capacity": "Medium"
+  },
+  {
+    "id": "tm-002",
+    "name": "Marcus Lim",
+    "role": "Competition Economist",
+    "yearsExperience": 11,
+    "industries": ["beverages", "consumer goods", "retail"],
+    "specialties": ["upward pricing pressure", "unilateral effects", "survey evidence"],
+    "skills": ["econometrics", "market shares", "entry analysis"],
+    "clearance": "Restricted",
+    "previousMatters": ["APB / Heineken", "Premium grocery retail merger"],
+    "capacity": "High"
+  },
+  {
+    "id": "tm-003",
+    "name": "Priya Nair",
+    "role": "Legal Counsel",
+    "yearsExperience": 16,
+    "industries": ["automotive", "industrial equipment", "transport"],
+    "specialties": ["joint ventures", "control analysis", "Competition Act"],
+    "skills": ["statutory analysis", "decision drafting", "confidentiality"],
+    "clearance": "Restricted",
+    "previousMatters": ["Hino / MFTBC", "Heavy vehicle distribution review"],
+    "capacity": "Low"
+  },
+  {
+    "id": "tm-004",
+    "name": "Daniel Goh",
+    "role": "Senior Investigator",
+    "yearsExperience": 9,
+    "industries": ["shipping", "logistics", "aviation"],
+    "specialties": ["third party evidence", "document requests", "barriers to entry"],
+    "skills": ["interviews", "information requests", "entry analysis"],
+    "clearance": "Standard",
+    "previousMatters": ["Container leasing acquisition", "Air cargo handling review"],
+    "capacity": "High"
+  },
+  {
+    "id": "tm-005",
+    "name": "Rachel Wong",
+    "role": "Assistant Case Officer",
+    "yearsExperience": 5,
+    "industries": ["financial services", "payments", "fintech"],
+    "specialties": ["form m1", "stakeholder mapping", "confidential advice"],
+    "skills": ["case intake", "timeline management", "third party contacts"],
+    "clearance": "Standard",
+    "previousMatters": ["GF Singapore / AMF", "Payments platform acquisition"],
+    "capacity": "High"
+  },
+  {
+    "id": "tm-006",
+    "name": "Omar Rahman",
+    "role": "Data Analyst",
+    "yearsExperience": 7,
+    "industries": ["digital platforms", "telecommunications", "media"],
+    "specialties": ["network effects", "data markets", "customer switching"],
+    "skills": ["market shares", "dashboards", "econometrics"],
+    "clearance": "Standard",
+    "previousMatters": ["Streaming media joint venture", "Cloud communications acquisition"],
+    "capacity": "Medium"
+  }
+]
